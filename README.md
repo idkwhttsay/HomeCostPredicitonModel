@@ -1,9 +1,9 @@
 # Home Cost Prediction Model
 
-Initial dataset:
-RangeIndex: 20640 entries, 0 to 20639
-Data columns (total 10 columns):
- #   Column              Non-Null Count  Dtype  
+Initial dataset: \
+RangeIndex: 20640 entries, 0 to 20639 \
+Data columns (total 10 columns): \
+ #   Column              Non-Null Count  Dtype  \
 ---  ------              --------------  -----  \
  0   longitude           20640 non-null  float64 \
  1   latitude            20640 non-null  float64 \
@@ -21,19 +21,19 @@ memory usage: 1.6+ MB \
 
 After dataset was analyzed and processed, Model was trained on the next features:
 
-RangeIndex: 20640 entries, 0 to 20639
-Data columns (total 8 columns):
- #   Column                    Non-Null Count  Dtype  
----  ------                    --------------  -----  
- 0   housing_median_age        20640 non-null  float64
- 1   median_income             20640 non-null  float64
- 2   median_house_value        20640 non-null  float64
- 3   ocean_proximity           20640 non-null  object 
- 4   rooms_per_household       20640 non-null  float64
- 5   bedrooms_per_room         20640 non-null  float64
- 6   population_per_household  20640 non-null  float64
- 7   coords                    20640 non-null  float64
-dtypes: float64(7), object(1)
-memory usage: 1.3+ MB
+RangeIndex: 20640 entries, 0 to 20639 \
+Data columns (total 8 columns): \
+ #   Column                    Non-Null Count  Dtype  \
+---  ------                    --------------  -----  \
+ 0   housing_median_age        20640 non-null  float64 \
+ 1   median_income             20640 non-null  float64\
+ 2   median_house_value        20640 non-null  float64\
+ 3   ocean_proximity           20640 non-null  object \
+ 4   rooms_per_household       20640 non-null  float64\
+ 5   bedrooms_per_room         20640 non-null  float64\
+ 6   population_per_household  20640 non-null  float64\
+ 7   coords                    20640 non-null  float64\
+dtypes: float64(7), object(1)\
+memory usage: 1.3+ MB\
 
 Moreover, model was trained by three different ML algorithms: Linear Regression (56% Accuracy), Random Forest Regressor (75% Accuracy), and XGBRegressor (78% Accuracy).
